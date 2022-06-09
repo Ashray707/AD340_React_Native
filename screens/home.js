@@ -4,10 +4,18 @@ import {View, Button, Text} from 'react-native';
 const Home = ({navigation}) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Home View</Text>
+      <Text
+        style={{
+        fontSize: 24,
+        color: 'blue',
+        textAlign: 'center',
+          paddingBottom: 10,
+      }}>
+      Home View
+    </Text>
       <Button
-        onPress={() => navigation.navigate('Listing')}
-        title="Listing Screen">
+        onPress={() => navigation.navigate('ListingScreen')}
+        title="People List Screen">
         {' '}
       </Button>
     </View>

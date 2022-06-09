@@ -13,12 +13,20 @@ const MyStack = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
+          name="HomeScreen"
           component={HomeScreen}
           options={{title: 'Home Page'}}
         />
-        <Stack.Screen name="Detail" component={DetailsScreen} />
-        <Stack.Screen name="Listing" component={ListingScreen} />
+        <Stack.Screen
+          name="ListingScreen"
+          component={ListingScreen}
+          options={{title: 'List Page'}}
+        />
+        <Stack.Screen
+          name="DetailsScreen"
+          component={DetailsScreen}
+          options={{title: 'Detail Page'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
